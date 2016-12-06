@@ -12,7 +12,7 @@ position:absolute;
 overflow:hidden;
 width:100%;height:100%;
 background:transparent;
-font-size:300%;
+font-size:375%;
 }
 .face {
 box-shadow:inset 0 0 0 1px rgba(0, 0, 0, 0.4);
@@ -98,6 +98,7 @@ opacity:1;
 width:3.8em;
 height:5em;
 margin:-2.5em 0 0 -1.9em;
+transition: margin 0.4s ease-in-out;
 }
 .cub-1 .ft {
 transform:translateZ(0.45em);
@@ -118,38 +119,56 @@ background-color:#FFFFFF;
 }
 
 /*001*/
+.nus-001 .cub-1 {
+margin:-0.5em 0 0 3.9em;
+transform:translate3D(0em, -2em, -2em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
 .nus-001 .face {background:rgba(232, 234, 242, 1);}
 .nus-001 .photon-shader {background-color:rgba(232, 234, 242, 1);}
 .nus-001 .lt .photon-shader {background-color:rgba(203, 204, 205, 1);}
 .nus-001 .ft .photon-shader {background-image:url(../img/nus-001.jpg);}
 
 /*002*/
-.nus-002 .cub-1 {transform:translate3D(-3em, 0em, 1em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);}
+.nus-002 .cub-1 {
+margin:-1.5em 0 0 0.9em;
+transform:translate3D(0em, -1em, -1em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
 .nus-002 .photon-shader {background-color:#232725;}
 .nus-002 .lt .photon-shader {background-color:#010707;}
 .nus-002 .ft .photon-shader {background-image:url(../img/nus-002.jpg);}
 
 /*003*/
-.nus-003 .cub-1 {transform:translate3D(3em, 0em, -1em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);}
+.nus-003 .cub-1 {
+margin:-2.5em 0 0 -1.9em;
+transform:translate3D(0em, 0em, 0em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
 .nus-003 .photon-shader {background-color:#da3a2b;}
 .nus-003 .lt .photon-shader {background-color:#772a2a;}
 .nus-003 .ft .photon-shader {background-image:url(../img/nus-003.jpg);}
 
 /*004*/
-/*.scene.nus-004 {transform:rotateX(-20deg) rotateY(34deg);}*/
-.nus-004 .cub-1 {transform:translate3D(-6em, 0em, 2em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);}
+.nus-004 .cub-1 {
+margin:-3.5em 0 0 -4.9em;
+transform:translate3D(0em, 1em, 1em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
 .nus-004 .photon-shader {background-color:#107ec9;}
 .nus-004 .lt .photon-shader {background-color:#005fb5;}
 .nus-004 .ft .photon-shader {background-image:url(../img/nus-004.jpg);}
 
 /*005*/
-.nus-005 .cub-1 {transform:translate3D(6em, 0em, -2em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);}
+.nus-005 .cub-1 {
+margin:-4.5em 0 0 -7.9em;
+transform:translate3D(0em, 2em, 2em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
 .nus-005 .photon-shader {background-color:#8ba1b7;}
 .nus-005 .lt .photon-shader {background-color:#304653;}
 .nus-005 .ft .photon-shader {background-image:url(../img/nus-005.jpg);}
 
 /*006*/
-.nus-006 .cub-1 {transform:translate3D(-9em, 0em, 3em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);}
+.nus-006 .cub-1 {
+margin:-5.5em 0 0 -10.9em;
+transform:translate3D(0em, 3em, 3em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
 .nus-006 .photon-shader {background-color:#107ec9;}
 .nus-006 .lt .photon-shader {background-color:#005fb5;}
 .nus-006 .ft .photon-shader {background-image:url(../img/nus-006.jpg);}
