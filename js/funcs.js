@@ -1,9 +1,27 @@
 $(document).ready(function() {
 
-	// when 'yes', show the answer and buttons, hide the other stuff
 	$('.cub-1').click( function () {
 		$(this).css('margin-left','-5.9em');
-        //$(this).parent().hide();
-        //$(this).css('transform','translate3D(0em, 3em, 3em) ');
+	});
+
+
+    $('.btn-rgt').click( function () {
+		$('.scene').css('transform','rotateY(-65deg)');
+	});
+    $('.btn-lft').click( function () {
+		$('.scene').css('transform','rotateY(40deg)');
+	});
+    $('.btn-upp').click( function () {
+		$('.scene').css('transform','rotateX(-40deg)');
+	});
+    $('.btn-dwn').click( function () {
+		$('.scene').css('transform','rotateX(40deg)');
+	});
+
+    $('.btn-a').click( function () {
+		$('.cub-1').css('margin-left','-5.9em');
+	});
+    $('.btn-b').click( function () {
+		location.reload(true);
 	});
 });
