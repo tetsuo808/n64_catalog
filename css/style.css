@@ -7,134 +7,121 @@ background:linear-gradient(to bottom, #262626 0%, #535353 50%, #141414 100%);
 
 /* /!\ You need to add vendor prefixes in order to render the CSS properly (or simply use http://leaverou.github.io/prefixfree/) /!\ */
 #tridiv {
-  perspective:800px;
-  position:absolute;
-  overflow:hidden;
-  width:100%;
-  height:100%;
-  background:transparent;
-  font-size:375%;
+perspective:800px;
+position:absolute;
+overflow:hidden;
+width:100%;height:100%;
+background:transparent;
+font-size:300%;
 }
 .face {
-  box-shadow:inset 0 0 0 1px rgba(0, 0, 0, 0.4);
+box-shadow:inset 0 0 0 1px rgba(0, 0, 0, 0.4);
 }
 .scene, .shape, .face, .face-wrapper, .cr {
-  position:absolute;
-  transform-style:preserve-3d;
+position:absolute;
+transform-style:preserve-3d;
 }
 .scene {
-  width:80em;
-  height:80em;
-  top:50%;
-  left:50%;
-  margin:-40em 0 0 -40em;
-  transform:rotateX(-20deg) rotateY(-27deg);
-}
-.shape {
-  top:50%;
-  left:50%;
-  width:0;
-  height:0;
-  transform-origin:50%;
-}
-.face, .face-wrapper {
-  overflow:hidden;
-  transform-origin:0 0;
-  backface-visibility:hidden;
-  /* hidden by default, prevent blinking and other weird rendering glitchs */
-}
-.face {
-  background-size:100% 100%!important;
-  background-position:center;
-}
-.face-wrapper .face {
-  left:100%;
-  width:100%;
-  height:100%
-}
-.photon-shader {
-  position:absolute;
-  left:0;
-  top:0;
-  width:100%;
-  height:100%
-}
-    .ft .photon-shader {
-    background-size:100% 100%;
-    }
-
-.side {
-  left:50%;
-}
-.cr, .cr .side {
-  height:100%;
-}
-[class*="cuboid"] .ft, [class*="cuboid"] .bk {
-  width:100%;
-  height:100%;
-}
-[class*="cuboid"] .bk {
-  left:100%;
-}
-[class*="cuboid"] .rt {
-  transform:rotateY(-90deg) translateX(-50%);
-}
-[class*="cuboid"] .lt {
-  transform:rotateY(90deg) translateX(-50%);
-}
-[class*="cuboid"] .tp {
-  transform:rotateX(90deg) translateY(-50%);
-}
-[class*="cuboid"] .bm {
-  transform:rotateX(-90deg) translateY(-50%);
-}
-[class*="cuboid"] .lt {
-  left:100%;
-}
-[class*="cuboid"] .bm {
-  top:100%;
-}
-/* .cub-1 styles */
-.cub-1 {
-  transform:translate3D(0em, 0em, 0em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-  opacity:1;
-  width:3.8em;
-  height:5em;
-  margin:-2.5em 0 0 -1.9em;
-}
-.cub-1 .ft {
-  transform:translateZ(0.45em);
-}
-.cub-1 .bk {
-  transform:translateZ(-0.45em) rotateY(180deg);
-}
-.cub-1 .rt, .cub-1 .lt {
-  width:0.9em;
-  height:5em;
-}
-.cub-1 .tp, .cub-1 .bm {
-  width:3.8em;
-  height:0.9em;
-}
-.cub-1 .face {
-  background-color:#FFFFFF;
-}
-
-/*001*/
-.scene.nus-001 {
+width:80em;height:80em;
+top:50%;left:50%;
 margin:-40em 0 0 -40em;
 transform:rotateX(-20deg) rotateY(-27deg);
 }
-.nus-001 .face {
-  background:rgba(232, 234, 242, 1);
+.shape {
+top:50%;
+left:50%;
+width:0;
+height:0;
+transform-origin:50%;
 }
+.face, .face-wrapper {
+overflow:hidden;
+transform-origin:0 0;
+backface-visibility:hidden;
+/* hidden by default, prevent blinking and other weird rendering glitchs */
+}
+.face {
+background-size:100% 100%!important;
+background-position:center;
+}
+.face-wrapper .face {
+left:100%;
+width:100%;
+height:100%
+}
+.photon-shader {
+position:absolute;
+left:0;
+top:0;
+width:100%;
+height:100%
+}
+.ft .photon-shader {
+background-size:100% 100%;
+}
+
+.side {
+left:50%;
+}
+.cr, .cr .side {
+height:100%;
+}
+[class*="cuboid"] .ft, [class*="cuboid"] .bk {
+width:100%;
+height:100%;
+}
+[class*="cuboid"] .bk {
+left:100%;
+}
+[class*="cuboid"] .rt {
+transform:rotateY(-90deg) translateX(-50%);
+}
+[class*="cuboid"] .lt {
+transform:rotateY(90deg) translateX(-50%);
+}
+[class*="cuboid"] .tp {
+transform:rotateX(90deg) translateY(-50%);
+}
+[class*="cuboid"] .bm {
+transform:rotateX(-90deg) translateY(-50%);
+}
+[class*="cuboid"] .lt {
+left:100%;
+}
+[class*="cuboid"] .bm {
+top:100%;
+}
+/* .cub-1 styles */
+.cub-1 {
+transform:translate3D(0em, 0em, 0em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+opacity:1;
+width:3.8em;
+height:5em;
+margin:-2.5em 0 0 -1.9em;
+}
+.cub-1 .ft {
+transform:translateZ(0.45em);
+}
+.cub-1 .bk {
+transform:translateZ(-0.45em) rotateY(180deg);
+}
+.cub-1 .rt, .cub-1 .lt {
+width:0.9em;
+height:5em;
+}
+.cub-1 .tp, .cub-1 .bm {
+width:3.8em;
+height:0.9em;
+}
+.cub-1 .face {
+background-color:#FFFFFF;
+}
+
+/*001*/
+.nus-001 .face {background:rgba(232, 234, 242, 1);}
 .nus-001 .photon-shader {background-color:rgba(232, 234, 242, 1);}
-.nus-001 .lt .photon-shader {
-background-color:rgba(203, 204, 205, 1);
-}
-.nus-001 .ft .photon-shader {
-background-image:url(../img/nus-001.jpg);
-}
+.nus-001 .lt .photon-shader {background-color:rgba(203, 204, 205, 1);}
+.nus-001 .ft .photon-shader {background-image:url(../img/nus-001.jpg);}
 
 /*002*/
 .nus-002 .cub-1 {transform:translate3D(-3em, 0em, 1em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);}
@@ -150,13 +137,19 @@ background-image:url(../img/nus-001.jpg);
 
 /*004*/
 /*.scene.nus-004 {transform:rotateX(-20deg) rotateY(34deg);}*/
-.nus-004 .cub-1 {transform:translate3D(-6em, 0em, 0em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);}
+.nus-004 .cub-1 {transform:translate3D(-6em, 0em, 2em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);}
 .nus-004 .photon-shader {background-color:#107ec9;}
 .nus-004 .lt .photon-shader {background-color:#005fb5;}
 .nus-004 .ft .photon-shader {background-image:url(../img/nus-004.jpg);}
 
 /*005*/
-.nus-005 .cub-1 {transform:translate3D(6em, 0em, 0em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);}
+.nus-005 .cub-1 {transform:translate3D(6em, 0em, -2em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);}
 .nus-005 .photon-shader {background-color:#8ba1b7;}
 .nus-005 .lt .photon-shader {background-color:#304653;}
 .nus-005 .ft .photon-shader {background-image:url(../img/nus-005.jpg);}
+
+/*006*/
+.nus-006 .cub-1 {transform:translate3D(-9em, 0em, 3em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);}
+.nus-006 .photon-shader {background-color:#107ec9;}
+.nus-006 .lt .photon-shader {background-color:#005fb5;}
+.nus-006 .ft .photon-shader {background-image:url(../img/nus-006.jpg);}
