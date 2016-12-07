@@ -3,13 +3,14 @@
 html, body {
 height:100%;
 font-size:100%;
+font-family:helvetica,arial,sans-serif;
 background:linear-gradient(to bottom, #262626 0%, #535353 50%, #141414 100%);
 }
 .c-buttons {
 position:relative;
 float:right;
 z-index:999;
-top:20px;right:20px;
+top:30px;right:30px;
 width:60px;height:60px;
 border:2px solid #87847d;
 border-radius:32px;
@@ -20,7 +21,7 @@ cursor:pointer;
 display:inline-block;
 width:30px;height:30px;
 border-radius:15px;
-font-size:2em;
+font-size:100%;
 line-height:15px;
 color:#dd9828;
 padding:4px;
@@ -37,7 +38,7 @@ position:relative;
 float:right;
 clear:right;
 z-index:999;
-top:20px;right:20px;
+top:30px;right:30px;
 width:80px;height:80px;
 margin:-20px 40px 0 0;
 }
@@ -47,7 +48,7 @@ cursor:pointer;
 display:inline-block;
 width:40px;height:40px;
 border-radius:20px;
-font-size:1.5em;
+font-size:1.3em;
 line-height:15px;
 padding:4px;
 }
@@ -61,7 +62,7 @@ position:absolute;
 overflow:hidden;
 width:100%;height:100%;
 background:transparent;
-font-size:375%;
+font-size:312.5%;
 }
 .face {
 box-shadow:inset 0 0 0 1px rgba(0, 0, 0, 0.4);
@@ -79,10 +80,8 @@ transform:rotateX(-20deg) rotateY(-27deg);
 transition: all 2.4s ease-in-out;
 }
 .shape {
-top:50%;
-left:50%;
-width:0;
-height:0;
+top:50%;left:50%;
+width:0;height:0;
 transform-origin:50%;
 }
 .face, .face-wrapper {
@@ -97,8 +96,7 @@ background-position:center;
 }
 .face-wrapper .face {
 left:100%;
-width:100%;
-height:100%
+width:100%;height:100%
 }
 .photon-shader {
 position:absolute;
@@ -144,12 +142,12 @@ top:100%;
 }
 /* .cub-1 styles */
 .cub-1 {
-transform:translate3D(0em, 0em, 0em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+transform:translate3d(0em, 0em, 0em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
 opacity:1;
 width:3.8em;
 height:5em;
 margin:-2.5em 0 0 -1.9em;
-transition: margin 0.4s ease-in-out;
+transition: margin 1.3s ease-in-out;
 }
 .cub-1 .ft {
 transform:translateZ(0.45em);
@@ -171,8 +169,8 @@ background-color:#FFFFFF;
 
 /*001*/
 .nus-001 .cub-1 {
-margin:-0.5em 0 0 3.9em;
-transform:translate3D(0em, -2em, -2em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+margin:-4.5em 0 0 -7.9em;
+transform:translate3d(0em, 2em, 2em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
 }
 .nus-001 .face {background:rgba(232, 234, 242, 1);}
 .nus-001 .photon-shader {background-color:rgba(232, 234, 242, 1);}
@@ -181,8 +179,8 @@ transform:translate3D(0em, -2em, -2em) rotateX(0deg) rotateY(0deg) rotateZ(0deg)
 
 /*002*/
 .nus-002 .cub-1 {
-margin:-1.5em 0 0 0.9em;
-transform:translate3D(0em, -1em, -1em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+margin:-3.5em 0 0 -4.9em;
+transform:translate3d(0em, 1em, 1em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
 }
 .nus-002 .photon-shader {background-color:#232725;}
 .nus-002 .lt .photon-shader {background-color:#010707;}
@@ -191,35 +189,77 @@ transform:translate3D(0em, -1em, -1em) rotateX(0deg) rotateY(0deg) rotateZ(0deg)
 /*003*/
 .nus-003 .cub-1 {
 margin:-2.5em 0 0 -1.9em;
-transform:translate3D(0em, 0em, 0em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+transform:translate3d(0em, 0em, 0em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
 }
-.nus-003 .photon-shader {background-color:#da3a2b;}
-.nus-003 .lt .photon-shader {background-color:#772a2a;}
+.nus-003 .photon-shader {background-color:#9e342e;}
+.nus-003 .lt .photon-shader {background-color:#160706;}
 .nus-003 .ft .photon-shader {background-image:url(../img/nus-003.jpg);}
 
 /*004*/
 .nus-004 .cub-1 {
-margin:-3.5em 0 0 -4.9em;
-transform:translate3D(0em, 1em, 1em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+margin:-1.5em 0 0 0.9em;
+-webkit-transform:translate3d(0em, -1em, -1em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
 }
-.nus-004 .photon-shader {background-color:#107ec9;}
-.nus-004 .lt .photon-shader {background-color:#005fb5;}
+.nus-004 .photon-shader {background-color:#da3a2b;}
+.nus-004 .lt .photon-shader {background-color:#772a2a;}
 .nus-004 .ft .photon-shader {background-image:url(../img/nus-004.jpg);}
 
 /*005*/
 .nus-005 .cub-1 {
-margin:-4.5em 0 0 -7.9em;
-transform:translate3D(0em, 2em, 2em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+margin:-0.5em 0 0 3.9em;
+transform:translate3d(0em, -2em, -2em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
 }
-.nus-005 .photon-shader {background-color:#8ba1b7;}
-.nus-005 .lt .photon-shader {background-color:#304653;}
+.nus-005 .photon-shader {background-color:#232725;}
+.nus-005 .lt .photon-shader {background-color:#010707;}
 .nus-005 .ft .photon-shader {background-image:url(../img/nus-005.jpg);}
+
 
 /*006*/
 .nus-006 .cub-1 {
-margin:-5.5em 0 0 -10.9em;
-transform:translate3D(0em, 3em, 3em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+margin:-4.5em 0 0 -7.9em;
+transform:translate3d(0em, 2em, -3em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
 }
-.nus-006 .photon-shader {background-color:#107ec9;}
-.nus-006 .lt .photon-shader {background-color:#005fb5;}
+.nus-006 .photon-shader {background-color:#8ba1b7;}
+.nus-006 .lt .photon-shader {background-color:#304653;}
 .nus-006 .ft .photon-shader {background-image:url(../img/nus-006.jpg);}
+
+/*007*/
+.nus-007 .cub-1 {
+margin:-3.5em 0 0 -4.9em;
+transform:translate3d(0em, 1em, -4em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+.nus-007 .photon-shader {background-color:#107ec9;}
+.nus-007 .lt .photon-shader {background-color:#005fb5;}
+.nus-007 .ft .photon-shader {background-image:url(../img/nus-007.jpg);}
+
+/*008*/
+.nus-008 .cub-1 {
+margin:-2.5em 0 0 -1.9em;
+transform:translate3d(0em, 0em, -5em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+
+}
+.nus-008 .photon-shader {background-color:#107ec9;}
+.nus-008 .lt .photon-shader {background-color:#005fb5;}
+.nus-008 .ft .photon-shader {background-image:url(../img/nus-008.jpg);}
+
+/*009*/
+.nus-009 .cub-1 {
+margin:-2.5em 0 0 0.9em;
+transform:translate3d(0em, 0em, -6em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+.nus-009 .photon-shader {background-color:#ccc;}
+.nus-009 .lt .photon-shader {background-color:#888;}
+.nus-009 .ft .photon-shader {background-image:url(../img/nus-009.jpg);}
+
+/*010*/
+.nus-010 .cub-1 {
+margin:-0.5em 0 0 3.9em;
+transform:translate3d(0em, -2em, -7em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+.nus-010 .photon-shader {background-color:#04378f;}
+.nus-010 .lt .photon-shader {background-color:#032053;}
+.nus-010 .ft .photon-shader {background-image:url(../img/nus-010.jpg);}
+
+
+/*javascript*/
+#tridiv .crush {margin-left:-1em;}
